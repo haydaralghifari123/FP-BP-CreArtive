@@ -9,7 +9,7 @@
     tools:context=".activity_signup_usn">
 
     <ImageButton
-        android:id="@+id/buttonBack3"
+        android:id="@+id/btnBack3"
         android:layout_width="15dp"
         android:layout_height="30dp"
         android:layout_marginTop="55dp"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonBack3" />
+        app:layout_constraintTop_toBottomOf="@id/btnBack3" />
 
     <EditText
         android:id="@+id/editTextUsn"

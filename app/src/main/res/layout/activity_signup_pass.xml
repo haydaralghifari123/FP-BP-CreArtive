@@ -9,7 +9,7 @@
     tools:context=".activity_signup_pass">
 
     <ImageButton
-        android:id="@+id/buttonBack2"
+        android:id="@+id/btnBack2"
         android:layout_width="15dp"
         android:layout_height="30dp"
         android:layout_marginTop="55dp"
@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonBack2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBack2" />
 
     <EditText
         android:id="@+id/editTextPass"
