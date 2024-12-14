@@ -73,22 +73,11 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--  FRAGMENT ISI FOTO2NYA  -->
-<!--    <androidx.fragment.app.FragmentContainerView-->
-<!--        android:id="@+id/"-->
-<!--        android:name=""-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        />-->
-
+    <!--  FRAGMENT / RECYCLERVIEW ISI FOTO2NYA  -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/LayoutMenu"
-        android:layout_width="412dp"
+        android:layout_width="match_parent"
         android:layout_height="110dp"
         android:background="@drawable/half_round"
         app:layout_constraintBottom_toBottomOf="parent"
