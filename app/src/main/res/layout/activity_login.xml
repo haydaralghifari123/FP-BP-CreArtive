@@ -42,11 +42,11 @@
         android:layout_width="372dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="9dp"
         android:backgroundTint="@color/peach"
         android:fontFamily="@font/outfit_semibold"
         android:text="Sign Up"
         android:textSize="24dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -70,7 +70,8 @@
     <androidx.constraintlayout.helper.widget.Flow
         android:id="@+id/flow"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
