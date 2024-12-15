@@ -22,15 +22,18 @@ class SignIn : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_sign_in)
 
-        val email : EditText = findViewById(R.id.editTextUsnSignIn)
-        val password : EditText = findViewById(R.id.editTextPassSignIn)
-        val btnLogin : Button = findViewById(R.id.buttonLogin)
+        val email: EditText = findViewById(R.id.editTextUsnSignIn)
+        val password: EditText = findViewById(R.id.editTextPassSignIn)
+        val btnLogin: Button = findViewById(R.id.buttonLogin)
 
 //        gtw ini dipake engga
 //        btnLogin.setOnClickListener {
-//            val intent = Intent(this,HomeActivity::class.java)
+//            val intent = Intent(this, HomeActivity::class.java)
 //            startActivity(intent)
 //        }
+//    }
+//}
+
 
         // event button Login click
         btnLogin.setOnClickListener {
@@ -73,4 +76,4 @@ class SignIn : AppCompatActivity() {
                 }
             }
         )
-}
+    }

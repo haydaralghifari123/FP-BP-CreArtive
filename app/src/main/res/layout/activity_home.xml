@@ -73,7 +73,18 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--  FRAGMENT / RECYCLERVIEW ISI FOTO2NYA  -->
+    <!--  FRAGMENT HOME -> RECYCLERVIEW ISI FOTO2NYA  -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.fp_bp.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/LayoutMenu"
@@ -81,6 +92,7 @@
         android:layout_height="110dp"
         android:background="@drawable/half_round"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:fitsSystemWindows="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
@@ -120,6 +132,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/account" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
