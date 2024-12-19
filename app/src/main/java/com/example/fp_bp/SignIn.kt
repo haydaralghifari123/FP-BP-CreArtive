@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fp_bp.client.RetrofitClient
@@ -16,6 +17,7 @@ import retrofit2.Response
 class SignIn : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
@@ -64,6 +66,11 @@ class SignIn : AppCompatActivity() {
                     }
                 }
             )
+        }
+
+        val btnBack : ImageButton = findViewById(R.id.btnBack5)
+        btnBack.setOnClickListener {
+            finish()
         }
     }
 }
