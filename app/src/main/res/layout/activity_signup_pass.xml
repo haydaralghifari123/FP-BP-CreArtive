@@ -24,7 +24,7 @@
         android:id="@+id/textPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/outfit_bold"
         android:text="Create a \npassword!"
         android:textAlignment="viewStart"
