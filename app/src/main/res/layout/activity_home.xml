@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/dark"
     android:id="@+id/main"
+    android:fitsSystemWindows="true"
     tools:context=".HomeActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -103,10 +104,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="56dp"
             android:layout_marginTop="36dp"
-            android:background="@android:color/transparent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/home" />
+            app:srcCompat="@drawable/home"
+            android:background="@android:color/transparent" />
 
         <ImageButton
             android:id="@+id/btnSearch"
@@ -119,7 +120,8 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/btnHome"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/search" />
+            app:srcCompat="@drawable/search"
+ />
 
         <ImageButton
             android:id="@+id/btnAccount"

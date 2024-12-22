@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:background="@color/dark"
     tools:context=".SearchFragment">
 
@@ -40,8 +41,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextSearch" />
 
-    <!--  recyclerview #illustrator  -->
-
     <TextView
         android:id="@+id/textIllustrator"
         android:layout_width="wrap_content"
@@ -57,6 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerViewHastag" />
 
+    <!--  recyclerview #illustrator  -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewIllustrator"
         android:layout_width="match_parent"
@@ -69,8 +69,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textIllustrator" />
-
-    <!--  recyclerview #novels  -->
 
     <TextView
         android:id="@+id/textNovels"
@@ -87,6 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/recyclerViewIllustrator" />
 
+    <!--  recyclerview #novels  -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewNovels"
         android:layout_width="match_parent"
@@ -99,7 +98,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textNovels" />
 
-    <!--  recyclerview #manga  -->
     <TextView
         android:id="@+id/textManga"
         android:layout_width="wrap_content"
@@ -114,6 +112,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/recyclerViewNovels" />
 
+    <!--  recyclerview #manga  -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewManga"
         android:layout_width="match_parent"
