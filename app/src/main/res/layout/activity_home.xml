@@ -102,37 +102,35 @@
             android:id="@+id/btnHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/transparent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/home"
-            android:background="@android:color/transparent" />
+            app:srcCompat="@drawable/home40" />
 
         <ImageButton
             android:id="@+id/btnSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="102dp"
+            android:layout_marginTop="32dp"
             android:background="@android:color/transparent"
             app:layout_constraintEnd_toStartOf="@+id/btnAccount"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toEndOf="@+id/btnHome"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/search"
- />
+            app:srcCompat="@drawable/search40" />
 
         <ImageButton
             android:id="@+id/btnAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="56dp"
             android:background="@android:color/transparent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/account" />
+            app:srcCompat="@drawable/account40" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
