@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/dark"
     android:fitsSystemWindows="true"
-    tools:context=".PostActivity">
+    tools:context=".NewPostActivity">
 
     <ImageButton
         android:id="@+id/btnBack7"

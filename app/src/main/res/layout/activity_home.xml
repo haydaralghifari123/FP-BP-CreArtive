@@ -9,78 +9,12 @@
     android:fitsSystemWindows="true"
     tools:context=".HomeActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/headerHome"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <TextView
-            android:id="@+id/all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="36dp"
-            android:fontFamily="@font/outfit_medium"
-            android:text="All"
-            android:textColor="@color/gray"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/following"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="33dp"
-            android:layout_marginTop="36dp"
-            android:fontFamily="@font/outfit_medium"
-            android:text="Following"
-            android:textColor="@color/gray"
-            android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/all"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/illustrator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="33dp"
-            android:layout_marginTop="36dp"
-            android:fontFamily="@font/outfit_medium"
-            android:text="Illustrator"
-            android:textColor="@color/gray"
-            android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/following"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/manga"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="33dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="40dp"
-            android:fontFamily="@font/outfit_medium"
-            android:text="Manga"
-            android:textColor="@color/gray"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/illustrator"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <!--  FRAGMENT HOME -> RECYCLERVIEW ISI FOTO2NYA  -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
         android:name="com.example.fp_bp.HomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
         android:layout_marginBottom="110dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -103,7 +103,7 @@
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="110dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/rounded"
         android:src="@drawable/add"
         app:layout_constraintBottom_toBottomOf="parent"
