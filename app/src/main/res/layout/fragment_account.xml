@@ -98,18 +98,33 @@
         app:layout_constraintTop_toBottomOf="@+id/textPengikut" />
 
     <!--  recycler view postingan  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAccount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text0" />
+
+
 <!--  btn add diatasnya recycler view. berarti dikasi layout lg. constraint  -->
-    <ImageButton
-        android:id="@+id/btnAdd"
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/rounded"
-        android:src="@drawable/add"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="90dp"
+        android:contentDescription="@string/fab_content_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.863"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:srcCompat="@drawable/add"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
