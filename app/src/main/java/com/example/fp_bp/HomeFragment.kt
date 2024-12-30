@@ -1,12 +1,12 @@
 package com.example.fp_bp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.google.android.material.chip.Chip
+import androidx.fragment.app.Fragment
 
 class HomeFragment : Fragment() {
 
@@ -18,7 +18,8 @@ class HomeFragment : Fragment() {
         val rootView = inflater.inflate(R.layout.fragment_home, container, false)
 
         // List of specialties
-        val listOfSpecialties = listOf("Umum", "THT", "Kulit", "Gigi", "Penyakit Dalam", "Kandungan", "Saraf")
+        val listOfSpecialties = listOf("All", "Following", "Illustrator", "Novels", "Manga")
+
 
         // Get the chipContainer
         val chipContainer: LinearLayout = rootView.findViewById(R.id.chipContainer)
@@ -29,6 +30,14 @@ class HomeFragment : Fragment() {
                 text = specialty
                 isClickable = true
                 isCheckable = true
+
+                // Add margin to the chip
+                val layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                )
+                layoutParams.setMargins(8, 5, 8, 0) // Left, Top, Right, Bottom
+                this.layoutParams = layoutParams
             }
             chipContainer.addView(chip)
         }

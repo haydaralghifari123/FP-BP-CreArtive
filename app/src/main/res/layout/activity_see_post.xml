@@ -60,6 +60,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewHastagPost"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <!--  RECYCLER VIEW YANG HASTAG TP MAKE CARD LAYOUT DI SEARCH JG  -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

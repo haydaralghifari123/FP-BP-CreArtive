@@ -45,6 +45,7 @@ class AccountFragment : Fragment() {
 
         fab.setOnClickListener {
             val intent = Intent(requireContext(), NewPostActivity::class.java)
+            startActivity(intent)
         }
     }
 
