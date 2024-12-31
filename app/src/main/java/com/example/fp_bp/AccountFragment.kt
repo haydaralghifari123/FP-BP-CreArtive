@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.TextView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 // TODO: Rename parameter arguments, choose names that match
@@ -45,6 +47,12 @@ class AccountFragment : Fragment() {
 
         fab.setOnClickListener {
             val intent = Intent(requireContext(), NewPostActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnSettings : ImageButton = view.findViewById(R.id.btnSettings)
+        btnSettings.setOnClickListener {
+            val intent = Intent(requireContext(), SettingsActivity::class.java)
             startActivity(intent)
         }
     }

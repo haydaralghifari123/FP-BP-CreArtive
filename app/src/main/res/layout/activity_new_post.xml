@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textNewPost"
-        app:srcCompat="@drawable/add50" />
+        app:srcCompat="@drawable/add25" />
 
     <TextView
         android:id="@+id/textEdit"
@@ -61,34 +61,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageNewPost" />
 
-
-    <LinearLayout
-        android:layout_width="371dp"
+    <EditText
+        android:id="@+id/txtCaption"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Write a caption"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        android:gravity="start|top"
+        android:lines="3"
+        android:background="@android:color/transparent"
+        android:maxLines="6"
+        app:layout_constraintTop_toBottomOf="@id/textEdit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEdit">
-
-        <EditText
-            android:id="@+id/editCaption"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:background="@null"
-            android:ems="10"
-            android:fontFamily="@font/outfit"
-            android:hint="Write a caption"
-            android:inputType="text"
-            android:paddingBottom="4dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/white" />
-    </LinearLayout>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/buttonDone"
