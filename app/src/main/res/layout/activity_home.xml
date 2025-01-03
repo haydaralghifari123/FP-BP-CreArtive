@@ -24,7 +24,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/LayoutMenu"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="90dp"
         android:background="@drawable/half_round"
         app:layout_constraintBottom_toBottomOf="parent"
         android:fitsSystemWindows="true"
