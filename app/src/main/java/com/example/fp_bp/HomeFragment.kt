@@ -7,8 +7,17 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.google.android.material.chip.Chip
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.fp_bp.client.RetrofitClient
+import com.example.fp_bp.response.images.ImagesResponse
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class HomeFragment : Fragment() {
+    // declare array list of images
+    private val listImages = ArrayList<ImagesResponse>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -19,7 +28,6 @@ class HomeFragment : Fragment() {
 
         // List of specialties
         val listOfSpecialties = listOf("All", "Following", "Illustrator", "Novels", "Manga")
-
 
         // Get the chipContainer
         val chipContainer: LinearLayout = rootView.findViewById(R.id.chipContainer)
@@ -42,6 +50,33 @@ class HomeFragment : Fragment() {
             chipContainer.addView(chip)
         }
 
+        // add data to recycler view
+        val rvHome: RecyclerView = rootView.findViewById(R.id.recyclerViewHome)
+        rvHome.layoutManager = GridLayoutManager(activity, 2)
+
+        // response dari REST API
+        RetrofitClient.instance.getImages().enqueue(object : Callback<List<ImagesResponse>> {
+            override fun onResponse(
+                call: Call<List<ImagesResponse>>,
+                response: Response<List<ImagesResponse>>
+            ) {
+                listImages.clear()
+                response.body()?.let {
+                    listImages.addAll(it)
+                }
+                // set adapter
+                val adapterImgHome = AdapterImgHome(listImages)
+                rvHome.adapter = adapterImgHome
+            }
+
+            override fun onFailure(call: Call<List<ImagesResponse>>, t: Throwable) {
+                // Handle the error
+                t.printStackTrace()
+            }
+        })
+
         return rootView
     }
 }
+
+// BLM BERHASIL MUNCUL FOTO2NYA

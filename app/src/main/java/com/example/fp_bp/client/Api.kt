@@ -2,9 +2,11 @@ package com.example.fp_bp.client
 
 import com.example.fp_bp.response.account.LoginResponse
 import com.example.fp_bp.response.account.RegisterResponse
+import com.example.fp_bp.response.images.ImagesResponse
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
+import retrofit2.http.GET
 import retrofit2.http.POST
 
 interface Api {
@@ -22,4 +24,7 @@ interface Api {
         @Field("password") password: String,
         @Field("username") username: String
     ): Call<RegisterResponse>
+
+    @GET("images")
+    fun getImages(): Call<List<ImagesResponse>>
 }
