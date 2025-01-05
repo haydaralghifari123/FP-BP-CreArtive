@@ -18,7 +18,7 @@ class AdapterImgHome(private val listImages: ArrayList<ImagesResponse>) : Recycl
             val images = response.image_url
 
             // library picasso
-            val url = "http://192.168.56.1/rest_api_fp/index.php/picture/$images"
+            val url = "http://192.168.56.1/rest_api_fp/index.php/picture/${response.image_url}"
             Picasso.get().load(url).into(imgHome)
         }
     }

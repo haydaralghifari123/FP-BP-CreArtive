@@ -2,6 +2,7 @@ package com.example.fp_bp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -46,6 +47,7 @@ class AccountFragment : Fragment() {
         val fab: FloatingActionButton = view.findViewById(R.id.floating_action_button)
 
         fab.setOnClickListener {
+            Log.d("FABClick", "FAB ditekan")
             val intent = Intent(requireContext(), NewPostActivity::class.java)
             startActivity(intent)
         }
