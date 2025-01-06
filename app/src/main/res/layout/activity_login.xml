@@ -40,22 +40,22 @@
     <Button
         android:id="@+id/buttonSignup"
         android:layout_width="372dp"
-        android:layout_height="60dp"
+        android:layout_height="53dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/peach"
         android:fontFamily="@font/outfit_semibold"
         android:text="Sign Up"
         android:textSize="24dp"
-        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="372dp"
-        android:layout_height="60dp"
+        android:layout_height="53dp"
         android:layout_gravity="center"
         android:layout_marginBottom="42dp"
         android:backgroundTint="@color/gray"
