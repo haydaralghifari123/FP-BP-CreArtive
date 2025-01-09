@@ -25,6 +25,6 @@ interface Api {
         @Field("username") username: String
     ): Call<RegisterResponse>
 
-    @GET("images")
+    @GET("picture")
     fun getImages(): Call<List<ImagesResponse>>
 }
